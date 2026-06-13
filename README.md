@@ -1,8 +1,7 @@
 # 🛡️ Support Integrity Auditor (SIA)
 
 > **Self-supervised priority mismatch detection for enterprise CRM ticket queues.**
->
-> IITR Finance Club — AI/ML Track | Open Projects 2026
+
 
 ---
 
@@ -255,7 +254,3 @@ The model includes char n-gram features that provide robustness against:
 - Keyword splitting (`"not  working"`)
 - Leetspeak (`"syst3m down"`)
 - Case manipulation
-
----
-
-*Built for IIT Roorkee Finance Club — Open Projects 2026*
