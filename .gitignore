@@ -25,8 +25,7 @@ env/
 Thumbs.db
 
 # Model binaries (large files)
-*.pkl
-*.joblib
+# *.pkl and *.joblib allowed for Streamlit Cloud deployment
 *.h5
 *.pb
 *.onnx
