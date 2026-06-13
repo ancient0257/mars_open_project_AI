@@ -3,6 +3,8 @@
 > **Self-supervised priority mismatch detection for enterprise CRM ticket queues.**
 
 
+🌐 **Live App:** [ancient0257-mars-open-project-ai-app-2foou9.streamlit.app](https://ancient0257-mars-open-project-ai-app-2foou9.streamlit.app/)
+
 ---
 
 ## Overview
