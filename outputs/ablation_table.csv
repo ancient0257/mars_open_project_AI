@@ -1,0 +1,4 @@
+,Accuracy,Macro F1,Rec Consistent,Rec Mismatch
+Signal 1 only (NLP keywords),1.0,1.0,1.0,1.0
+Signal 2 only (RT proxy),1.0,1.0,1.0,1.0
+Fused (both signals),1.0,1.0,1.0,1.0

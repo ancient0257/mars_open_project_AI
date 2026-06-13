@@ -1,0 +1,7 @@
+{
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "recall_consistent": 1.0,
+  "recall_mismatch": 1.0,
+  "signal_agreement_pairwise": 0.2551
+}

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model binaries (large files)
+*.pkl
+*.joblib
+*.h5
+*.pb
+*.onnx
+
+# Environment
+.env
+*.env.local
+
+# Streamlit
+.streamlit/secrets.toml

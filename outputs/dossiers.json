@@ -1,0 +1,3148 @@
+[
+  {
+    "ticket_id": "TKT-114936",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "6 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-114936 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [crash] in a 'Technical' ticket (baseline severity 2/3), combined with 6-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-104616",
+    "assigned_priority": "Critical",
+    "inferred_severity": "High",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "hack",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "8 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Fraud",
+        "weight": "category baseline severity = 3/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "2/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-104616 was assigned 'Critical' but signals converge on 'High' severity (delta -1). Absence of urgency keywords and a 8-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.6%"
+  },
+  {
+    "ticket_id": "TKT-119473",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "88 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-119473 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 88-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-109416",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "32 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-109416 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Technical' ticket (baseline severity 2/3), combined with 32-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.6%"
+  },
+  {
+    "ticket_id": "TKT-107456",
+    "assigned_priority": "Medium",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "14 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-107456 carries assigned priority 'Medium' but converging signals indicate 'High' severity (delta +1). Presence of keywords [crash] in a 'Technical' ticket (baseline severity 2/3), combined with 14-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.1%"
+  },
+  {
+    "ticket_id": "TKT-101502",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash, crashes",
+        "weight": "raw keyword score = 1.20"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "18 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-101502 was assigned 'Critical' but signals converge on 'Medium' severity (delta -2). Absence of urgency keywords and a 18-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.5%"
+  },
+  {
+    "ticket_id": "TKT-108829",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "36 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-108829 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Technical' ticket (baseline severity 2/3), combined with 36-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-106799",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "28 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106799 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 28-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-106242",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "69 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106242 was assigned 'High' but signals converge on 'Low' severity (delta -2). Absence of urgency keywords and a 69-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "100.0%"
+  },
+  {
+    "ticket_id": "TKT-118637",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "120 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-118637 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 120-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-109988",
+    "assigned_priority": "Critical",
+    "inferred_severity": "High",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "phishing",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "5 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Fraud",
+        "weight": "category baseline severity = 3/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-109988 was assigned 'Critical' but signals converge on 'High' severity (delta -1). Absence of urgency keywords and a 5-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-115608",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "37 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-115608 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 37-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-119092",
+    "assigned_priority": "High",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "api error, 500",
+        "weight": "raw keyword score = 3.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "2 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-119092 carries assigned priority 'High' but converging signals indicate 'Critical' severity (delta +1). Presence of keywords [api error, 500] in a 'Technical' ticket (baseline severity 2/3), combined with 2-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "96.3%"
+  },
+  {
+    "ticket_id": "TKT-110602",
+    "assigned_priority": "High",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash, crashes, api error",
+        "weight": "raw keyword score = 4.00"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "5 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-110602 carries assigned priority 'High' but converging signals indicate 'Critical' severity (delta +1). Presence of keywords [crash, crashes, api error] in a 'Technical' ticket (baseline severity 2/3), combined with 5-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "98.5%"
+  },
+  {
+    "ticket_id": "TKT-104906",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "23 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-104906 was assigned 'Critical' but signals converge on 'Medium' severity (delta -2). Absence of urgency keywords and a 23-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-106349",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "56 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "2/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106349 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 56-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-102866",
+    "assigned_priority": "Critical",
+    "inferred_severity": "High",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "10 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "1/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-102866 was assigned 'Critical' but signals converge on 'High' severity (delta -1). Absence of urgency keywords and a 10-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.4%"
+  },
+  {
+    "ticket_id": "TKT-111060",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "login failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "21 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-111060 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [login failed] in a 'Technical' ticket (baseline severity 2/3), combined with 21-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-109243",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "login failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "31 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-109243 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [login failed] in a 'Technical' ticket (baseline severity 2/3), combined with 31-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-115014",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "31 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-115014 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 31-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-112644",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash, crashes, api error",
+        "weight": "raw keyword score = 4.00"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "8 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "1/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-112644 carries assigned priority 'Medium' but converging signals indicate 'Critical' severity (delta +2). Presence of keywords [crash, crashes, api error] in a 'Technical' ticket (baseline severity 2/3), combined with 8-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "97.1%"
+  },
+  {
+    "ticket_id": "TKT-112902",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "5 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "1/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-112902 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 5-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-117850",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "120 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-117850 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 120-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-103198",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "32 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-103198 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Technical' ticket (baseline severity 2/3), combined with 32-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-115064",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "8 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-115064 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Technical' ticket (baseline severity 2/3), combined with 8-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-103424",
+    "assigned_priority": "High",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash, crashes, api error",
+        "weight": "raw keyword score = 4.00"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "8 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-103424 carries assigned priority 'High' but converging signals indicate 'Critical' severity (delta +1). Presence of keywords [crash, crashes, api error] in a 'Technical' ticket (baseline severity 2/3), combined with 8-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "98.3%"
+  },
+  {
+    "ticket_id": "TKT-107647",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "stolen",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "41 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Fraud",
+        "weight": "category baseline severity = 3/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-107647 was assigned 'Critical' but signals converge on 'Medium' severity (delta -2). Absence of urgency keywords and a 41-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.6%"
+  },
+  {
+    "ticket_id": "TKT-113165",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "27 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-113165 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 27-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-106367",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "28 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106367 was assigned 'High' but signals converge on 'Low' severity (delta -2). Absence of urgency keywords and a 28-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.6%"
+  },
+  {
+    "ticket_id": "TKT-104012",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "26 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-104012 was assigned 'High' but signals converge on 'Low' severity (delta -2). Absence of urgency keywords and a 26-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.1%"
+  },
+  {
+    "ticket_id": "TKT-117017",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "down",
+        "weight": "raw keyword score = 0.60"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "34 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-117017 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of keywords [down] in a 'Billing' ticket (baseline severity 2/3), combined with 34-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-100985",
+    "assigned_priority": "High",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "40 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-100985 was assigned 'High' but signals converge on 'Medium' severity (delta -1). Absence of urgency keywords and a 40-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.3%"
+  },
+  {
+    "ticket_id": "TKT-101859",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "security",
+        "weight": "raw keyword score = 0.60"
+      },
+      {
+        "signal": "escalation_phrase",
+        "source_field": "Ticket_Description",
+        "value": "cancel",
+        "weight": "1 escalation phrase(s) detected"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "9 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-101859 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [security] in a 'Billing' ticket (baseline severity 2/3), combined with 9-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-117187",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "source_field": "Ticket_Description",
+        "value": "cancel",
+        "weight": "1 escalation phrase(s) detected"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "44 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "1/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-117187 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 44-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.5%"
+  },
+  {
+    "ticket_id": "TKT-103149",
+    "assigned_priority": "Critical",
+    "inferred_severity": "High",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "login failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "10 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-103149 was assigned 'Critical' but signals converge on 'High' severity (delta -1). Absence of urgency keywords and a 10-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-100765",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "10 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-100765 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 10-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-104659",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "5 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-104659 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 5-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-100866",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "11 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-100866 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 11-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.5%"
+  },
+  {
+    "ticket_id": "TKT-116593",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "3 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-116593 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 3-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-118656",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "10 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-118656 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 10-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-104673",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "56 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-104673 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 56-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-109542",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "5 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-109542 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Technical' ticket (baseline severity 2/3), combined with 5-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-106332",
+    "assigned_priority": "High",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash, crashes",
+        "weight": "raw keyword score = 1.20"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "30 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106332 was assigned 'High' but signals converge on 'Medium' severity (delta -1). Absence of urgency keywords and a 30-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.3%"
+  },
+  {
+    "ticket_id": "TKT-113154",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "38 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "2/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-113154 was assigned 'High' but signals converge on 'Low' severity (delta -2). Absence of urgency keywords and a 38-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.4%"
+  },
+  {
+    "ticket_id": "TKT-106113",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "110 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106113 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 110-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-101454",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "21 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-101454 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Technical' ticket (baseline severity 2/3), combined with 21-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.3%"
+  },
+  {
+    "ticket_id": "TKT-118451",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "source_field": "Ticket_Description",
+        "value": "cancel",
+        "weight": "1 escalation phrase(s) detected"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "30 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-118451 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 30-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-112070",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "500",
+        "weight": "raw keyword score = 0.60"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "34 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-112070 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of keywords [500] in a 'Technical' ticket (baseline severity 2/3), combined with 34-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-117488",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "payment failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "29 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-117488 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [payment failed] in a 'Billing' ticket (baseline severity 2/3), combined with 29-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-100912",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "login failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "36 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-100912 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [login failed] in a 'Technical' ticket (baseline severity 2/3), combined with 36-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-106482",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "500, login failed",
+        "weight": "raw keyword score = 2.00"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "25 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106482 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [500, login failed] in a 'Technical' ticket (baseline severity 2/3), combined with 25-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-111136",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "32 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-111136 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 32-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-113475",
+    "assigned_priority": "High",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "33 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "2/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-113475 was assigned 'High' but signals converge on 'Medium' severity (delta -1). Absence of urgency keywords and a 33-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-106734",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "login failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "1 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106734 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [login failed] in a 'Technical' ticket (baseline severity 2/3), combined with 1-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-109180",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "53 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-109180 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 53-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-100818",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "73 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-100818 was assigned 'High' but signals converge on 'Low' severity (delta -2). Absence of urgency keywords and a 73-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "100.0%"
+  },
+  {
+    "ticket_id": "TKT-115231",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "payment failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "36 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-115231 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [payment failed] in a 'Billing' ticket (baseline severity 2/3), combined with 36-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-103553",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "12 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-103553 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 12-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-117134",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "35 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "2/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-117134 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 35-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-101270",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "11 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-101270 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 11-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-115759",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "500, login failed",
+        "weight": "raw keyword score = 2.00"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "10 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-115759 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [500, login failed] in a 'Technical' ticket (baseline severity 2/3), combined with 10-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-119960",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "8 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-119960 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 8-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-118257",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "12 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-118257 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 12-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-103828",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "92 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-103828 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 92-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-116407",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "4 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-116407 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 4-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-109934",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "47 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "2/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-109934 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 47-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-100026",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "source_field": "Ticket_Description",
+        "value": "cancel",
+        "weight": "1 escalation phrase(s) detected"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "56 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-100026 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 56-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-108803",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "20 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-108803 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Technical' ticket (baseline severity 2/3), combined with 20-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.2%"
+  },
+  {
+    "ticket_id": "TKT-111000",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "110 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-111000 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 110-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-119948",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "7 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-119948 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 7-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-103533",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "payment failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "1 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-103533 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [payment failed] in a 'Billing' ticket (baseline severity 2/3), combined with 1-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-101683",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "unrecognized",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "18 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Fraud",
+        "weight": "category baseline severity = 3/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-101683 was assigned 'Critical' but signals converge on 'Medium' severity (delta -2). Absence of urgency keywords and a 18-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.5%"
+  },
+  {
+    "ticket_id": "TKT-100591",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "97 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-100591 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 97-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-108580",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "source_field": "Ticket_Description",
+        "value": "cancel",
+        "weight": "1 escalation phrase(s) detected"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "26 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "2/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-108580 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 26-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-119462",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "46 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-119462 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 46-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-116470",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "45 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-116470 was assigned 'High' but signals converge on 'Low' severity (delta -2). Absence of urgency keywords and a 45-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.5%"
+  },
+  {
+    "ticket_id": "TKT-112749",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "payment failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "7 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "1/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-112749 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [payment failed] in a 'Billing' ticket (baseline severity 2/3), combined with 7-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-112659",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "11 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-112659 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 11-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.6%"
+  },
+  {
+    "ticket_id": "TKT-116281",
+    "assigned_priority": "Medium",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "17 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-116281 carries assigned priority 'Medium' but converging signals indicate 'High' severity (delta +1). Presence of keywords [crash] in a 'Technical' ticket (baseline severity 2/3), combined with 17-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.0%"
+  },
+  {
+    "ticket_id": "TKT-118473",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "26 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-118473 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 26-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-114506",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "43 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "2/5",
+        "interpretation": "Low satisfaction corroborates elevated distress."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-114506 was assigned 'High' but signals converge on 'Low' severity (delta -2). Absence of urgency keywords and a 43-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.4%"
+  },
+  {
+    "ticket_id": "TKT-106758",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "source_field": "Ticket_Description",
+        "value": "cancel",
+        "weight": "1 escalation phrase(s) detected"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "55 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106758 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 55-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-102900",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "source_field": "Ticket_Description",
+        "value": "cancel",
+        "weight": "1 escalation phrase(s) detected"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "29 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-102900 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 29-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-113382",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "payment failed",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "39 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-113382 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [payment failed] in a 'Billing' ticket (baseline severity 2/3), combined with 39-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-117651",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "8 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-117651 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Technical' ticket (baseline severity 2/3), combined with 8-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-119873",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash, crashes, api error",
+        "weight": "raw keyword score = 4.00"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "12 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-119873 carries assigned priority 'Medium' but converging signals indicate 'Critical' severity (delta +2). Presence of keywords [crash, crashes, api error] in a 'Technical' ticket (baseline severity 2/3), combined with 12-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.6%"
+  },
+  {
+    "ticket_id": "TKT-109738",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "36 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-109738 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Technical' ticket (baseline severity 2/3), combined with 36-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.7%"
+  },
+  {
+    "ticket_id": "TKT-105216",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "2 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-105216 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Billing' ticket (baseline severity 2/3), combined with 2-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-113579",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "17 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-113579 was assigned 'Critical' but signals converge on 'Medium' severity (delta -2). Absence of urgency keywords and a 17-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.4%"
+  },
+  {
+    "ticket_id": "TKT-113855",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "api error, 500",
+        "weight": "raw keyword score = 2.80"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "14 hours",
+        "interpretation": "Category-normalised RT maps to 'High' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-113855 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [api error, 500] in a 'Technical' ticket (baseline severity 2/3), combined with 14-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.2%"
+  },
+  {
+    "ticket_id": "TKT-106235",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "stolen",
+        "weight": "raw keyword score = 1.40"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "18 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Fraud",
+        "weight": "category baseline severity = 3/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106235 was assigned 'Critical' but signals converge on 'Medium' severity (delta -2). Absence of urgency keywords and a 18-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.6%"
+  },
+  {
+    "ticket_id": "TKT-116058",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "28 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-116058 carries assigned priority 'Low' but converging signals indicate 'Medium' severity (delta +1). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 28-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-105531",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "100 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-105531 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 100-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-107812",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "120 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Billing",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-107812 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 120-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-102378",
+    "assigned_priority": "High",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+1",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash, crashes, api error",
+        "weight": "raw keyword score = 4.00"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "4 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "4/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-102378 carries assigned priority 'High' but converging signals indicate 'Critical' severity (delta +1). Presence of keywords [crash, crashes, api error] in a 'Technical' ticket (baseline severity 2/3), combined with 4-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "98.5%"
+  },
+  {
+    "ticket_id": "TKT-102530",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "95 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "General Inquiry",
+        "weight": "category baseline severity = 0/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-102530 was assigned 'Medium' but signals converge on 'Low' severity (delta -1). Absence of urgency keywords and a 95-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-106432",
+    "assigned_priority": "High",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "21 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-106432 was assigned 'High' but signals converge on 'Medium' severity (delta -1). Absence of urgency keywords and a 21-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.8%"
+  },
+  {
+    "ticket_id": "TKT-112807",
+    "assigned_priority": "High",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "33 hours",
+        "interpretation": "Category-normalised RT maps to 'Medium' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-112807 was assigned 'High' but signals converge on 'Medium' severity (delta -1). Absence of urgency keywords and a 33-hour resolution time (category-normalised) suggest the issue was routine. Overtriage inflates high-priority queue load and wastes senior agent bandwidth on non-critical issues.",
+    "confidence": "99.5%"
+  },
+  {
+    "ticket_id": "TKT-108175",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "6 hours",
+        "interpretation": "Category-normalised RT maps to 'Critical' severity band. Fast relative to category median \u2014 corroborates urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Account",
+        "weight": "category baseline severity = 1/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "5/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-108175 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of elevated urgency score in a 'Account' ticket (baseline severity 1/3), combined with 6-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "99.9%"
+  },
+  {
+    "ticket_id": "TKT-119719",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": "+2",
+    "feature_evidence": [
+      {
+        "signal": "urgency_keyword",
+        "source_field": "Ticket_Subject + Ticket_Description",
+        "value": "crash, crashes, api error",
+        "weight": "raw keyword score = 4.00"
+      },
+      {
+        "signal": "resolution_time",
+        "source_field": "Resolution_Time_Hours",
+        "value": "71 hours",
+        "interpretation": "Category-normalised RT maps to 'Low' severity band. Slow relative to category median \u2014 consistent with lower urgency."
+      },
+      {
+        "signal": "issue_category",
+        "source_field": "Issue_Category",
+        "value": "Technical",
+        "weight": "category baseline severity = 2/3"
+      },
+      {
+        "signal": "satisfaction_score",
+        "source_field": "Satisfaction_Score",
+        "value": "3/5",
+        "interpretation": "Moderate-to-high satisfaction \u2014 no additional distress signal."
+      }
+    ],
+    "constraint_analysis": "Ticket TKT-119719 carries assigned priority 'Low' but converging signals indicate 'High' severity (delta +2). Presence of keywords [crash, crashes, api error] in a 'Technical' ticket (baseline severity 2/3), combined with 71-hour resolution time, suggests undertriage. SLA exposure: delayed escalation for genuine incidents in this category increases customer churn risk.",
+    "confidence": "96.1%"
+  }
+]
